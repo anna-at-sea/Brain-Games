@@ -1,5 +1,6 @@
 import random
 
+
 calc_game_rules = 'What is the result of the expression?'
 
 

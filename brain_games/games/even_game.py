@@ -1,5 +1,6 @@
 import random
 
+
 def if_even(number):
     if number % 2 == 0:
         return 'yes'
