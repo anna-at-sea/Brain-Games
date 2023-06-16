@@ -1,10 +1,14 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Five mini-games to train the brain"
 authors = ["Anna Smertina <smr.anya@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
+classifiers = [
+    "Topic :: Games/Entertainment :: Puzzle Games"
+]
+repository = "https://github.com/anna-at-sea/python-project-49"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"

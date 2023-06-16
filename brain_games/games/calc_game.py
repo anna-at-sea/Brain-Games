@@ -1,7 +1,7 @@
 import random
 
 
-calc_game_rules = 'What is the result of the expression?'
+game_rules = 'What is the result of the expression?'
 
 
 def generate_questions_and_answers():
@@ -25,4 +25,4 @@ def generate_questions_and_answers():
     return zip(list_of_questions, list_of_answers)
 
 
-calc_list_of_questions_and_answers = generate_questions_and_answers()
+list_of_questions_and_answers = generate_questions_and_answers()

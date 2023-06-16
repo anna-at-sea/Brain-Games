@@ -1,6 +1,24 @@
+# brain-games
+This project is built for training purpose as a part of learning process with [Hexlet](https://hexlet.io). It consists of five mini games designed to train and entertain your brain. Each game has a short demonstration video below.
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/anna-at-sea/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/anna-at-sea/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ff4f78acd9880c311578/maintainability)](https://codeclimate.com/github/anna-at-sea/python-project-49/maintainability)
+
+### System requirements:
+* python = "^3.10"
+* poetry = "^1.4.2"
+* prompt = "^0.4.1"
+
+### Installation:
+`make install build package-install`
+
+### Launching games:
+`brain-even`
+`brain-calc`
+`brain-gcd`
+`brain-progression`
+`brain-prime`
 
 ### Games demonstration:
 

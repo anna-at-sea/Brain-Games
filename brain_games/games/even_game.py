@@ -7,7 +7,7 @@ def if_even(number):
     return 'no'
 
 
-even_game_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+game_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_questions_and_answers():
@@ -21,4 +21,4 @@ def generate_questions_and_answers():
     return zip(list_of_questions, list_of_answers)
 
 
-even_list_of_questions_and_answers = generate_questions_and_answers()
+list_of_questions_and_answers = generate_questions_and_answers()

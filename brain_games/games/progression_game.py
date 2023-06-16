@@ -1,7 +1,7 @@
 import random
 
 
-progression_game_rules = 'What number is missing in the progression?'
+game_rules = 'What number is missing in the progression?'
 
 
 def generate_progression():
@@ -36,4 +36,4 @@ def generate_questions_and_answers():
     return zip(list_of_questions, list_of_answers)
 
 
-progression_list_of_questions_and_answers = generate_questions_and_answers()
+list_of_questions_and_answers = generate_questions_and_answers()
