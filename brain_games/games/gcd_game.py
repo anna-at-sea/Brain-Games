@@ -15,21 +15,26 @@ def non_prime_number():
     return number
 
 
+def question_and_answer():
+    number_1 = non_prime_number()
+    number_2 = non_prime_number()
+    question = f'{number_1} {number_2}'
+    divisor = number_1
+    while divisor > 0:
+        if number_1 % divisor == 0 and number_2 % divisor == 0:
+            correct_answer = str(divisor)
+            break
+        divisor -= 1
+    return question, correct_answer
+
+
 def generate_questions_and_answers():
     list_of_questions = []
     list_of_answers = []
     i = 1
-    while i <= 3:
-        number_1 = non_prime_number()
-        number_2 = non_prime_number()
-        question = f'{number_1} {number_2}'
+    while i <=3:
+        question, correct_answer = question_and_answer()
         list_of_questions.append(question)
-        divisor = number_1
-        while number_1 > 0:
-            if number_1 % divisor == 0 and number_2 % divisor == 0:
-                correct_answer = str(divisor)
-                break
-            divisor -= 1
         list_of_answers.append(correct_answer)
         i += 1
     return zip(list_of_questions, list_of_answers)
