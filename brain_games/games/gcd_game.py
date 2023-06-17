@@ -32,7 +32,7 @@ def generate_questions_and_answers():
     list_of_questions = []
     list_of_answers = []
     i = 1
-    while i <=3:
+    while i <= 3:
         question, correct_answer = question_and_answer()
         list_of_questions.append(question)
         list_of_answers.append(correct_answer)
