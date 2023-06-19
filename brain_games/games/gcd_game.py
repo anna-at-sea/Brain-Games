@@ -1,15 +1,26 @@
 import random
-from brain_games.prime_module import is_prime
 
 
 game_rules = 'Find the greatest common divisor of given numbers.'
 
 
 # excluding prime numbers greater than 10 to make the game more fun :)
+def is_prime(number):
+    divisor = number
+    number_of_divisors = 0
+    i = 1
+    while divisor > 0:
+        if number % divisor == 0:
+            number_of_divisors += 1
+        divisor -= 1
+        i += 1
+    return number_of_divisors == 2
+
+
 def non_prime_number():
     number = random.randint(1, 100)
     while number:
-        if number < 10 or is_prime(number) == 'no':
+        if number < 10 or not is_prime(number):
             break
         number = random.randint(1, 100)
     return number
@@ -26,18 +37,3 @@ def question_and_answer():
             break
         divisor -= 1
     return question, correct_answer
-
-
-def generate_questions_and_answers():
-    list_of_questions = []
-    list_of_answers = []
-    i = 1
-    while i <= 3:
-        question, correct_answer = question_and_answer()
-        list_of_questions.append(question)
-        list_of_answers.append(correct_answer)
-        i += 1
-    return zip(list_of_questions, list_of_answers)
-
-
-list_of_questions_and_answers = generate_questions_and_answers()

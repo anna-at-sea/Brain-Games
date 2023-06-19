@@ -6,7 +6,7 @@ from brain_games.games_logic import any_game
 
 
 rules = progression_game.game_rules
-q_a = progression_game.list_of_questions_and_answers
+q_a = progression_game.question_and_answer
 
 
 def main():
