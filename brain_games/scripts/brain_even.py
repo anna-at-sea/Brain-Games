@@ -6,7 +6,7 @@ from brain_games.games_logic import any_game
 
 
 def main():
-    any_game(even_game.game_rules, even_game.question_and_answer)
+    any_game(even_game)
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 import random
 
 
-game_rules = 'What number is missing in the progression?'
+RULES = 'What number is missing in the progression?'
 
 
 def question_and_answer():
@@ -13,10 +13,9 @@ def question_and_answer():
         progression.append(number)
         number += step
         i += 1
-    pop_element = random.randint(0, 9)
-    correct_answer = str(progression[pop_element])
-    progression.pop(pop_element)
-    progression.insert(pop_element, '..')
+    random_index = random.randint(0, 9)
+    correct_answer = str(progression[random_index])
+    progression[random_index] = '..'
     question = ''
     for elem in progression:
         question += f'{elem} '
