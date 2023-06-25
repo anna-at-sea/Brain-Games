@@ -6,6 +6,8 @@ Otherwise answer "no".'
 
 
 def is_prime(number):
+    if number < 2:
+        return False
     divisor = number
     number_of_divisors = 0
     i = 1
@@ -19,7 +21,7 @@ def is_prime(number):
 
 def question_and_answer():
     question = random.randint(1, 100)
-    if is_prime(question) is True:
+    if is_prime(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'

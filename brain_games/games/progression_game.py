@@ -16,8 +16,5 @@ def question_and_answer():
     random_index = random.randint(0, 9)
     correct_answer = str(progression[random_index])
     progression[random_index] = '..'
-    question = ''
-    for elem in progression:
-        question += f'{elem} '
-    question = question.strip()
+    question = ' '.join(list(map(str, progression)))
     return question, correct_answer
