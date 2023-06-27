@@ -14,7 +14,7 @@ def question_and_answer():
         number += step
         i += 1
     random_index = random.randint(0, 9)
-    correct_answer = str(progression[random_index])
+    correct_answer = progression[random_index]
     progression[random_index] = '..'
     question = ' '.join(list(map(str, progression)))
-    return question, correct_answer
+    return question, str(correct_answer)

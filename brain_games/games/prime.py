@@ -1,4 +1,5 @@
 import random
+import math
 
 
 RULES = 'Answer "yes" if given number is prime. \
@@ -8,15 +9,12 @@ Otherwise answer "no".'
 def is_prime(number):
     if number < 2:
         return False
-    divisor = number
-    number_of_divisors = 0
-    i = 1
-    while divisor > 0:
+    for divisor in range(2, int(math.sqrt(number)) + 1):
         if number % divisor == 0:
-            number_of_divisors += 1
-        divisor -= 1
-        i += 1
-    return number_of_divisors == 2
+            return False
+            break
+    else:
+        return True
 
 
 def question_and_answer():
